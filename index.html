@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Анкета: Педагогика</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: Arial, sans-serif; background: #eef2f5; padding: 20px; }
+        .container { max-width: 900px; margin: 0 auto; background: white; border-radius: 20px; padding: 25px; }
+        h1 { color: #1a6b4c; }
+        .card { background: #f9f9f9; border-radius: 15px; padding: 20px; margin-bottom: 20px; border: 1px solid #ddd; }
+        .badge { background: #1a6b4c; color: white; padding: 4px 12px; border-radius: 20px; display: inline-block; margin-bottom: 12px; }
+        .scenario { background: #e8f0fe; padding: 12px; border-radius: 10px; margin: 10px 0; font-weight: bold; }
+        .option { display: block; padding: 8px 12px; margin: 5px 0; background: white; border-radius: 10px; border: 1px solid #ddd; cursor: pointer; }
+        input[type="radio"] { margin-right: 10px; }
+        button { background: #1a6b4c; color: white; border: none; padding: 15px 30px; font-size: 18px; font-weight: bold; border-radius: 30px; cursor: pointer; margin: 10px; }
+        .btn-primary { background: #0066cc; }
+        .status { margin-top: 20px; padding: 12px; border-radius: 10px; }
+        .status.success { background: #d4edda; color: #155724; }
+        .status.error { background: #ffe6e5; color: #dc3545; }
+        .email-box { margin-top: 20px; padding: 15px; background: #e8f0fe; border-radius: 15px; text-align: center; border: 2px solid #0066cc; }
+        .email-address { font-size: 24px; font-weight: bold; color: #0066cc; margin: 10px 0; user-select: all; }
+        .copy-btn { background: #0066cc; color: white; border: none; padding: 8px 20px; border-radius: 20px; cursor: pointer; font-size: 14px; }
+        .copy-btn:hover { background: #0052a3; }
+        .instruction { color: #666; font-size: 14px; margin-top: 10px; }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>🧸 Педагогика дополнительного образования</h1>
+    <p>Профессиональная диагностика · 5 ситуационных задач</p>
+
+    <div class="card">
+        <div class="badge">Задача 1</div>
+        <div class="scenario">Ребёнок на занятии говорит: «Мне скучно, я не хочу это делать». Как вы отреагируете?</div>
+        <label class="option"><input type="radio" name="q1" value="А) Скажу: «Делай, что говорят»"> А) Скажу: «Делай, что говорят»</label>
+        <label class="option"><input type="radio" name="q1" value="Б) Поинтересуюсь, что именно не нравится, и предложу альтернативу"> Б) Поинтересуюсь, что именно не нравится, и предложу альтернативу</label>
+        <label class="option"><input type="radio" name="q1" value="В) Отправлю ребёнка к директору"> В) Отправлю ребёнка к директору</label>
+        <label class="option"><input type="radio" name="q1" value="Г) Игнорирую — «пусть сидит тихо»"> Г) Игнорирую — «пусть сидит тихо»</label>
+    </div>
+
+    <div class="card">
+        <div class="badge">Задача 2</div>
+        <div class="scenario">Что для вас главное в работе с детьми?</div>
+        <label class="option"><input type="radio" name="q2" value="А) Возможность контролировать и наказывать"> А) Возможность контролировать и наказывать</label>
+        <label class="option"><input type="radio" name="q2" value="Б) Помогать раскрывать таланты, поддерживать интерес и рост"> Б) Помогать раскрывать таланты, поддерживать интерес и рост</label>
+        <label class="option"><input type="radio" name="q2" value="В) Получать зарплату без эмоциональных затрат"> В) Получать зарплату без эмоциональных затрат</label>
+        <label class="option"><input type="radio" name="q2" value="Г) Работать только с «удобными» детьми"> Г) Работать только с «удобными» детьми</label>
+    </div>
+
+    <div class="card">
+        <div class="badge">Задача 3</div>
+        <div class="scenario">Почему перед проведением мастер-класса важно проверить материалы и инвентарь?</div>
+        <label class="option"><input type="radio" name="q3" value="А) Чтобы не тратить время во время занятия"> А) Чтобы не тратить время во время занятия</label>
+        <label class="option"><input type="radio" name="q3" value="Б) Чтобы обеспечить безопасность и качество занятия"> Б) Чтобы обеспечить безопасность и качество занятия</label>
+        <label class="option"><input type="radio" name="q3" value="В) Это формальность, можно и не проверять"> В) Это формальность, можно и не проверять</label>
+        <label class="option"><input type="radio" name="q3" value="Г) Чтобы произвести впечатление на коллег"> Г) Чтобы произвести впечатление на коллег</label>
+    </div>
+
+    <div class="card">
+        <div class="badge">Задача 4</div>
+        <div class="scenario">Вам нужно провести занятие по теме, которая детям кажется сложной. Как вы поступите?</div>
+        <label class="option"><input type="radio" name="q4" value="А) Буду читать лекцию как в учебнике"> А) Буду читать лекцию как в учебнике</label>
+        <label class="option"><input type="radio" name="q4" value="Б) Подберу игровые формы, примеры из жизни, вовлеку детей в обсуждение"> Б) Подберу игровые формы, примеры из жизни, вовлеку детей в обсуждение</label>
+        <label class="option"><input type="radio" name="q4" value="В) Отменю занятие — «сами разберутся»"> В) Отменю занятие — «сами разберутся»</label>
+        <label class="option"><input type="radio" name="q4" value="Г) Дам детям задание списать из интернета"> Г) Дам детям задание списать из интернета</label>
+    </div>
+
+    <div class="card">
+        <div class="badge">Задача 5</div>
+        <div class="scenario">Где может работать педагог дополнительного образования?</div>
+        <label class="option"><input type="radio" name="q5" value="А) Только в школе на уроках"> А) Только в школе на уроках</label>
+        <label class="option"><input type="radio" name="q5" value="Б) В центрах творчества, кружках, секциях, онлайн-платформах, музеях"> Б) В центрах творчества, кружках, секциях, онлайн-платформах, музеях</label>
+        <label class="option"><input type="radio" name="q5" value="В) Только за границей"> В) Только за границей</label>
+        <label class="option"><input type="radio" name="q5" value="Г) Только с детьми дошкольного возраста"> Г) Только с детьми дошкольного возраста</label>
+    </div>
+
+    <div style="text-align:center">
+        <button id="downloadBtn" class="btn-primary">📥 Скачать результаты (CSV)</button>
+        <button id="clearBtn">🗑 Очистить всё</button>
+    </div>
+
+    <div class="email-box">
+        <p style="font-weight: bold; margin-bottom: 5px;">📧 Для отправки результатов скопируйте адрес:</p>
+        <div class="email-address" id="emailAddress">priem@bpkhmao.ru</div>
+        <button id="copyEmailBtn" class="copy-btn">📋 Копировать email</button>
+        <p class="instruction">1. Скачайте CSV-файл → 2. Скопируйте email → 3. Откройте почту и отправьте файл на этот адрес</p>
+    </div>
+
+    <div id="statusMsg" class="status"></div>
+</div>
+
+<script>
+    const downloadBtn = document.getElementById('downloadBtn');
+    const clearBtn = document.getElementById('clearBtn');
+    const copyEmailBtn = document.getElementById('copyEmailBtn');
+    const statusDiv = document.getElementById('statusMsg');
+    const emailAddress = document.getElementById('emailAddress');
+
+    function getAnswers() {
+        const answers = {};
+        for (let i = 1; i <= 5; i++) {
+            const radios = document.getElementsByName('q' + i);
+            let selected = null;
+            for (let j = 0; j < radios.length; j++) {
+                if (radios[j].checked) { selected = radios[j].value; break; }
+            }
+            if (!selected) return null;
+            answers[i] = selected;
+        }
+        return answers;
+    }
+
+    function calculateScore(answers) {
+        let score = 0;
+        if (answers[1] === 'Б) Поинтересуюсь, что именно не нравится, и предложу альтернативу') score++;
+        if (answers[2] === 'Б) Помогать раскрывать таланты, поддерживать интерес и рост') score++;
+        if (answers[3] === 'Б) Чтобы обеспечить безопасность и качество занятия') score++;
+        if (answers[4] === 'Б) Подберу игровые формы, примеры из жизни, вовлеку детей в обсуждение') score++;
+        if (answers[5] === 'Б) В центрах творчества, кружках, секциях, онлайн-платформах, музеях') score++;
+        return score;
+    }
+
+    function getInterpretation(score) {
+        if (score >= 4) return "Высокая мотивация и адекватные представления о профессии";
+        if (score >= 2) return "Есть потенциал, требуется дополнительная профориентация";
+        return "Целесообразно предложить альтернативные направления";
+    }
+
+    function downloadCSV() {
+        const answers = getAnswers();
+        if (!answers) {
+            statusDiv.innerHTML = '❌ Ответьте на все вопросы!';
+            statusDiv.className = 'status error';
+            return;
+        }
+
+        const score = calculateScore(answers);
+        const interpretation = getInterpretation(score);
+
+        let csv = 'АНКЕТА: ПЕДАГОГИКА ДОПОЛНИТЕЛЬНОГО ОБРАЗОВАНИЯ\n';
+        csv += 'Дата,' + new Date().toLocaleString('ru-RU') + '\n';
+        csv += 'Итоговый балл,' + score + ' из 5\n';
+        csv += 'Интерпретация,' + interpretation + '\n\n';
+        csv += 'Вопрос,Ответ\n';
+        csv += '1. Ситуация выбора (ребёнок скучает),' + answers[1] + '\n';
+        csv += '2. Ценностный ориентир,' + answers[2] + '\n';
+        csv += '3. Логика и безопасность,' + answers[3] + '\n';
+        csv += '4. Профпроба «Креатив»,' + answers[4] + '\n';
+        csv += '5. Образ профессии,' + answers[5] + '\n';
+
+        const blob = new Blob(["\uFEFF" + csv], { type: 'text/csv;charset=utf-8;' });
+        const link = document.createElement('a');
+        const url = URL.createObjectURL(blob);
+        link.href = url;
+        link.setAttribute('download', `Педагогика_${Date.now()}.csv`);
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+        URL.revokeObjectURL(url);
+
+        statusDiv.innerHTML = '✅ CSV-файл скачан! Теперь скопируйте email и отправьте файл.';
+        statusDiv.className = 'status success';
+    }
+
+    function copyEmail() {
+        const email = emailAddress.textContent;
+        navigator.clipboard.writeText(email).then(() => {
+            const originalText = copyEmailBtn.textContent;
+            copyEmailBtn.textContent = '✅ Скопировано!';
+            copyEmailBtn.style.background = '#28a745';
+            setTimeout(() => {
+                copyEmailBtn.textContent = originalText;
+                copyEmailBtn.style.background = '#0066cc';
+            }, 2000);
+            statusDiv.innerHTML = '📧 Email скопирован!';
+            statusDiv.className = 'status success';
+        }).catch(() => {
+            statusDiv.innerHTML = '❌ Скопируйте вручную: priem@bpkhmao.ru';
+            statusDiv.className = 'status error';
+        });
+    }
+
+    downloadBtn.onclick = downloadCSV;
+    copyEmailBtn.onclick = copyEmail;
+    clearBtn.onclick = function() {
+        document.querySelectorAll('input[type="radio"]').forEach(r => r.checked = false);
+        statusDiv.innerHTML = 'Форма очищена.';
+        statusDiv.className = 'status';
+    };
+</script>
+</body>
+</html>
